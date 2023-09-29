@@ -1,6 +1,5 @@
 import { FaBars } from "react-icons/fa6";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import classNames from "classnames";
 import Logo from "/profile_pic.webp";
 import "./navbar.scss";
@@ -8,13 +7,12 @@ import "./navbar.scss";
 const NavBar = () => {
   const [link, setLink] = useState(1);
   const [dropDown, setDropDown] = useState(false);
-  // TODO: mettere che quando clicci si chiude dropdown
   return (
     <nav className="NavBar">
       <div className="NavBar__logo">
-        <Link to="/">
+        <a>
           <img src={Logo} alt="logo" title="Logo" />
-        </Link>
+        </a>
       </div>
       <input
         type="checkbox"
@@ -41,15 +39,14 @@ const NavBar = () => {
             link === 1 ? "NavBar__menu-item--active" : undefined
           )}
         >
-          <Link
-            to="/"
+          <a
             onClick={() => {
               setLink(1);
             }}
             aria-label="Home"
           >
             Home
-          </Link>
+          </a>
         </li>
         <li
           className={classNames(
@@ -57,15 +54,14 @@ const NavBar = () => {
             link === 2 ? "NavBar__menu-item--active" : undefined
           )}
         >
-          <Link
-            to="/about"
+          <a
             onClick={() => {
               setLink(2);
             }}
             aria-label="About"
           >
             About
-          </Link>
+          </a>
         </li>
         <li
           className={classNames(
@@ -73,15 +69,14 @@ const NavBar = () => {
             link === 3 ? "NavBar__menu-item--active" : undefined
           )}
         >
-          <Link
-            to="/projects"
+          <a
             onClick={() => {
               setLink(3);
             }}
             aria-label="Projects"
           >
             Projects
-          </Link>
+          </a>
         </li>
         <li
           className={classNames(
@@ -89,15 +84,14 @@ const NavBar = () => {
             link === 4 ? "NavBar__menu-item--active" : undefined
           )}
         >
-          <Link
-            to="/contact"
+          <a
             onClick={() => {
               setLink(4);
             }}
             aria-label="Contact"
           >
             Contact
-          </Link>
+          </a>
         </li>
       </menu>
     </nav>
