@@ -1,94 +1,28 @@
 .NavBar {
   width: 100%;
-  background-color: #778899;
-  height: 4rem;
   display: flex;
-  flex-direction: row;
-  position: relative;
-  label {
-    display: none;
-  }
-  &__logo {
+  justify-content: center;
+  background-color: #9381ff;
+  height: 65px;
+  align-items: center;
+  ul {
     display: flex;
-    width: fit-content;
-    margin-left: 10px;
-    height: 100%;
-    align-items: center;
-    position: absolute;
-    img {
-      border-radius: 50%;
-      width: 44px;
-      transition: filter 0.3s;
-      &:hover {
-        filter: drop-shadow(0px 0px 10px #2ed4e0);
-      }
-    }
-  }
-  &__menu {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 0 1rem;
-    &-item {
+    list-style-type: none;
+    column-gap: 3px;
+    li {
       a {
-        color: #ffffff;
-        transition-duration: 0.3s;
-        cursor: pointer;
-        &:hover {
-          color: #e6b205;
-        }
-      }
-      &--active {
-        a {
-          color: #e6b205 !important;
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .NavBar {
-    &__dropdown--logo {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      label {
         display: block;
-        height: fit-content;
-        svg {
-          font-size: 1.4rem;
-          fill: #ffffff;
-        }
-        &:hover {
-          cursor: pointer;
-        }
+        padding: 20px 2rem;
+        transition-duration: 0.5s;
+        color: #F8F7FF;
+        font-weight: bold;
+        border-radius: 10px;
       }
-    }
-    &__menu {
-      position: absolute;
-      width: 100%;
-      margin-top: 4rem;
-      flex-direction: column;
-      text-align: center;
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.25s ease-out;
-      li {
-        padding: 10px;
-        width: 100%;
-        &:nth-child(odd) {
-          background-color: #7e6c6c;
-        }
-        &:nth-child(even) {
-          background-color: rgb(103, 158, 110);
-        }
-      }
-      &--open {
-        transition: max-height 0.25s ease-in;
-        max-height: 164px;
+      a:hover {
+        // scale: 1.1;
+        color: #FFD8BE;
+        background-color: #00000065;
+        border-radius: 50px;
       }
     }
   }

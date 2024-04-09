@@ -1,3 +1,5 @@
+@import "./styles/colors";
+
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +8,9 @@
   -webkit-box-sizing: border-box;
 }
 
-:root {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color-scheme: dark;
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: $background;
 }
 
 a {

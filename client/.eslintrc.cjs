@@ -15,4 +15,21 @@ module.exports = {
       { allowConstantExport: true },
     ],
   },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    },
+    "eslint-import-resolver-custom-alias": {
+      "alias": {
+        "@components": "./src/components",
+        "@styles": "./src/styles",
+      },
+      "extensions": [".ts", ".tsx"]
+    }
+  }
 }
