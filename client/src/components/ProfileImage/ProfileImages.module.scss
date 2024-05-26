@@ -1,0 +1,29 @@
+.ProfileImage {
+  border-radius: 100%;
+  margin-right: 100px;
+  filter: drop-shadow(0px 0px 20px #3fcea5);
+  animation: back 10s infinite ease-in-out;
+}
+
+@keyframes back {
+  0%,
+  99% {
+    filter: drop-shadow(0px 0px 20px #3fcea5);
+  }
+  50% {
+    filter: drop-shadow(0px 0px 20px #1bb5e7);
+  }
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  .ProfileImage {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) and (orientation: portrait) {
+  .ProfileImage {
+    margin-right: 0;
+    width: 70%;
+  }
+}
