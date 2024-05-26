@@ -7,7 +7,7 @@ import "animate.css/animate.min.css";
 const App = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setTimeout(() => setLoading(false), 500);
+    setTimeout(() => setLoading(false), 1000);
   }, []);
   if (loading) {
     return <Loading />;
