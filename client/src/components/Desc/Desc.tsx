@@ -16,10 +16,10 @@ const Desc = () => {
         <li className={styles["Desc__list__social"]}>
           <a href="https://github.com/Dragon-nick" target="_blank">
             <button>
-              <FaGithub size={"30px"} />
+              <FaGithub size={"30px"} title="Github Profile" aria-label="Github Profile"/>
             </button>
           </a>
-          <a href="https://t.me/Dragon_nick" target="_blank">
+          <a href="https://t.me/Dragon_nick" target="_blank" title="Telegram Profile" aria-label="Telegram Profile">
             <button>
               <FaTelegram size={"30px"} />
             </button>
