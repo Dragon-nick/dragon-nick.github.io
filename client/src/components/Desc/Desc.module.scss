@@ -42,3 +42,9 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+  .Desc__list__social:hover{
+    border-radius: 10px;
+  }
+}
