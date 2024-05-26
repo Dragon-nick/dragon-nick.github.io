@@ -1,11 +1,15 @@
 import { FaGithub, FaTelegram } from "react-icons/fa6";
 import styles from "./Desc.module.scss";
+import classNames from "classnames";
 
 const Desc = () => {
   return (
     <div className={styles["Desc"]}>
       <h3 className={styles["Desc__hi"]}>HI THERE! I'M</h3>
-      <h1 className={styles["Desc__name"]}>
+      <h1 className={classNames(
+        styles["Desc__name"],
+        "animate__backInRight"
+      )}>
         <span>Dragon</span> Nick
       </h1>
       <ul className={styles["Desc__list"]}>

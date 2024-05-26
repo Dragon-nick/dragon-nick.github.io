@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import Image from "../../assets/profile_pic.webp";
 import styles from "./ProfileImages.module.scss";
 
@@ -6,7 +7,10 @@ const ProfileImage = () => {
     <img
       src={Image}
       alt="Profile Image"
-      className={styles["ProfileImage"]}
+      className={classNames(
+        styles["ProfileImage"],
+        "animate__fadeInDown"
+      )}
       draggable={false}
     />
   );
