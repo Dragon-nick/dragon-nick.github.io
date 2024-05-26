@@ -12,6 +12,7 @@ const ProfileImage = () => {
         "animate__fadeInDown"
       )}
       draggable={false}
+      width={"300px"}
     />
   );
 };
