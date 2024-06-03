@@ -19,12 +19,12 @@ const Desc = () => {
         <li>📚 I'm currently learning web development</li>
         <li className={styles["Desc__list__social"]}>
           <a href="https://github.com/Dragon-nick" target="_blank" title="Github Profile" aria-label="Github Profile">
-            <button>
+            <button aria-hidden="true">
               <FaGithub size={"30px"} />
             </button>
           </a>
           <a href="https://t.me/Dragon_nick" target="_blank" title="Telegram Profile" aria-label="Telegram Profile">
-            <button>
+            <button aria-hidden="true">
               <FaTelegram size={"30px"} />
             </button>
           </a>
