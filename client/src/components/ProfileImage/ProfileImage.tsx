@@ -7,10 +7,7 @@ const ProfileImage = () => {
     <img
       src={Image}
       alt="Profile Image"
-      className={classNames(
-        styles["ProfileImage"],
-        "animate__fadeInDown"
-      )}
+      className={classNames(styles["ProfileImage"], "animate__fadeInDown")}
       draggable={false}
       width={"300px"}
     />
