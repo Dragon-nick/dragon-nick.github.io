@@ -20,7 +20,6 @@ const Desc = () => {
             target="_blank"
             title="Github Profile"
             aria-label="Github Profile"
-            role="button"
           >
             <FaGithub size={"30px"} />
           </a>
@@ -29,7 +28,6 @@ const Desc = () => {
             target="_blank"
             title="Telegram Profile"
             aria-label="Telegram Profile"
-            role="button"
           >
             <FaTelegram size={"30px"} />
           </a>
